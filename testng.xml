@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="FuntcionalTestCases">
+<listeners>
+<listener class-name ="com.cura.utilities.Reporting" />
+</listeners>
+	<test thread-count="5" name="Test">
+		<parameter name="browser" value="chrome" />
+		<packages>
+			<package name="com.cura.*"></package>
+		</packages>
+		<classes>
+			<class name="com.cura.testcases.TC_002_MakeAppointment_DDT" >
+			<methods>
+				<exclude name='.*'></exclude>
+			</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- FuntcionalTestCases -->
